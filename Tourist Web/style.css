@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/images1.jpg);
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+.header-content {
+  margin-bottom: 150px;
+  color: white;
+  text-align: center;
+}
+
+.header-content h2 {
+  font-size: 4vmin;
+}
+
+.line {
+  width: 150px;
+  height: 4px;
+  background: #219c90;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+.header-content h1 {
+  font-size: 7vmin;
+  margin: 30px 0;
+}
+
+.btn {
+  padding: 8px 15px;
+  background: #219c90;
+  border-radius: 30px;
+  color: white;
+  opacity: 0.9;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+section {
+  width: 90%;
+  margin: 80px auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 4vmin;
+  color: #219c90;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+  gap: 30px;
+}
+
+.col {
+  flex: 1 1 30%;
+  max-width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.col img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  max-width: 300px;
+}
+
+h4 {
+  font-size: 3vmin;
+  color: #219c90;
+  margin: 20px auto;
+}
+
+p {
+  color: #191817;
+  padding: 0px 20px;
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  min-height: 200px;
+  padding: 20px 40px;
+  background: #219c90;
+  text-align: center;
+}
+
+footer p {
+  color: #fff;
+  margin: 20px auto;
+}
+
+img {
+  transition: transform 0.3s ease;
+}
+img:hover {
+  transform: scale(1.05);
+}
+
+/* ✅ Responsive CSS */
+@media screen and (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .col {
+    max-width: 90%;
+  }
+
+  .header-content h1 {
+    font-size: 6vmin;
+  }
+
+  .header-content h2 {
+    font-size: 3.5vmin;
+  }
+
+  p {
+    padding: 0 10px;
+  }
+}
